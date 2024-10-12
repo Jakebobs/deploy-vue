@@ -1,5 +1,19 @@
 {
-    "title": "Ubuntu simple",
+    "title": "Vue on Github Pages",
+    "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Step 1: Set Up the Repository",
+        "text": "step1/text.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
     "backend": {
       "imageid": "ubuntu"
     }
