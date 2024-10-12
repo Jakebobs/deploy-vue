@@ -4,8 +4,11 @@
 
 Welcome to our step by step guide.
 
+# Why should I learn this?
+If you want to have your own webpage as part of a resume or to allow others to more easily get an overview of your work. We think that using Vue is one of the simplest tools for perfoming this task in combination with github pages, since it can easily be set up to employ client-side routing. So you won't have to worry about a backend set up and can instead focus on the front end which your visitors will actually see.
+
 ### Please wait for the installations to finish on the right side of the page
-# Once "Installation complete!" is displayed, run these commands to verify that the installation is correct:
+# Once ` ubuntu $ ` is displayed, run these commands to verify that the installation is correct:
 
 ` node -v `
 Version should be v18.20.4
