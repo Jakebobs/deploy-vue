@@ -9,9 +9,10 @@ Great question! Run the following command in the terminal to start the creation 
 You will now see many questions arrive in the terminal.
 
 We want you to name your webapp "porkchop.io" , just to match our existing repo. Then answer the questions in this manner:
-- Typescript : No
+- Project Name : porkchop.io
+    - Typescript : No
     - JSX : No
-    - Vue Router : Yes
+    - Vue Router for Single Page Application Development : Yes
     - Pinia : No
     - Vitest : No
     - End to End : No
