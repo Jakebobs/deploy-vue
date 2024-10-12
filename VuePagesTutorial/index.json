@@ -9,6 +9,10 @@
       {
         "title": "Step 1: Set Up the Repository",
         "text": "step1/text.md"
+      },
+      {
+        "title": "Step 2: Creating a Vue Project",
+        "text": "step2/text.md"
       }
     ],
     "finish": {

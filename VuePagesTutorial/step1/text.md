@@ -1,22 +1,7 @@
-# Welcome to step 1!
+# Using GitHub CLI to deploy a repo
 
-We have taken the precaution of setting up a github repository for you, as well as providing the killercoda service with an access token to push to that directory. Which will allow you to only have to learn how to configure Vue for use with Github Pages.
+First run the command gh auth login to login via github.com
 
-# How do we get started?
-Great question! Run the following command in the terminal to start the creation of your Vue webpage.
-` npm create vue@latest `
+Then run gh repo create and create a new public repository on GitHub from scratch. Name it whatever you want but it has to end in .io for github pages to work seamlessly.
 
-You will now see many questions arrive in the terminal.
-
-We want you to name your webapp "porkchop.io" , just to match our existing repo. Then answer the questions in this manner:
-- Project Name : porkchop.io
-    - Typescript : No
-    - JSX : No
-    - Vue Router for Single Page Application Development : Yes
-    - Pinia : No
-    - Vitest : No
-    - End to End : No
-    - EsLint : No
-    - Vue Devtools: No
-
-You've now created the boilerplate for our page. Let's move on to the next step!
+Dont add a gitignore or license. Then clone it locally. Remember the name of your repository.
