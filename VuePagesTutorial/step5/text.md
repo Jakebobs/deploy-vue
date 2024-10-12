@@ -1,16 +1,16 @@
 # Deploying via Github actions
-Create a new folder named .github, enter it and create a new folder named workflows
-Create a .yml file with the following content.
-``` name 
+Create a new folder named `.github`, enter it and create a new folder named `workflows`
+Create a .yml file with the following content. `touch pagedeploy.yml`
+```
 name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main] # Trigger on push to the main branch
-  workflow_dispatch: # Allow manual triggering
+    branches: [master, main] 
+  workflow_dispatch: 
 
 permissions:
-  contents: write # Grant write access to push changes to the repository
+  contents: write
 
 jobs:
   deploy:
@@ -30,6 +30,18 @@ jobs:
       - name: Build the project
         run: npm run build
 
-      - name: Deploy with gh-pages
-        run: npm run deploy
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
 ```
+
+# What does this enable?
+You might prefer to have the newest changes published to the page on push to main instead of only using the deploy command. An advantage of this approach is that it will also enable you to add additonal actions to your deployment pipeline instead of having the deployment backdoor through the gh-pages package.
+
+# Push your changes
+` git add --all`
+` git commit -m workflow added`
+` git push `

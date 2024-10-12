@@ -7,7 +7,7 @@ Opening the web developer console will tell us this. You will find an error mess
 The fix is pretty simple. We need to open the editor once again. Navigate to your `vite.config.js` file and add these three things: 
 
 At the top: `import path from 'path';`
-Inside defineConfig: `base: '/',`
+Inside defineConfig: `base: '/<reponame.io>/',`
 Replacing the existing line starting with @ : `'@': path.resolve(__dirname, 'src'),`
 
 # What do these changes do? 
