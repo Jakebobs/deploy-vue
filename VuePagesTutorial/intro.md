@@ -8,4 +8,7 @@ Welcome to our step by step guide.
 # Once "Installation complete!" is displayed, run these commands to verify that the installation is correct:
 
 ` node -v `
+Version should be v18.20.4
+
 ` npm -v `
+Version should be 10.7.0
