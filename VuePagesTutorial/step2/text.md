@@ -5,7 +5,7 @@ Great question! Run the following command in the terminal to start the creation 
 You will now see many questions arrive in the terminal.
 
 Answer the questions in this manner:
-- Project Name : <reponame>.io
+- Project Name : `<reponame>.io`
     - Typescript : No
     - JSX : No
     - Vue Router for Single Page Application Development : Yes
@@ -29,4 +29,4 @@ You've now created the boilerplate for our page. To make sure our git is up and 
 Authenticate with your username and then use the PAT you created in the previous step as the password.
 
 # Optional step
-Verify by visiting https://github.com/<username>/<reponame>.io
+Verify by visiting `https://github.com/<username>/<reponame>.io`
