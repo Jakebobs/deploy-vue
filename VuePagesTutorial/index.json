@@ -19,9 +19,18 @@
         "text": "step3/text.md"
       },
       {
-        "title": "Step 4: Custom Domain",
+        "title": "Step 4: Follow the yellow brick road",
         "text": "step4/text.md"
+      },
+      {
+        "title": "Step 5: Deploying with GitHub Actions",
+        "text": "step5/text.md"
+      },
+      {
+        "title": "Step 6: Hash Routing",
+        "text": "finish.md"
       }
+
     ],
     "finish": {
       "text": "finish.md"

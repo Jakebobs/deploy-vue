@@ -1,6 +1,13 @@
 # Deploying via Github actions
 Create a new folder named `.github`, enter it and create a new folder named `workflows`
-Create a .yml file with the following content. `touch pagedeploy.yml`
+
+` mkdir .github `
+` cd .github `
+` mkdir workflows `
+` cd workflows `
+` touch pagedeploy.yml`
+
+Edit your .yml file with the following content. 
 ```
 name: Deploy to GitHub Pages
 
