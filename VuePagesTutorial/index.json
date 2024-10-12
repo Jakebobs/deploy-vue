@@ -2,7 +2,8 @@
     "title": "Vue on Github Pages",
     "details": {
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "foreground": "foreground.sh"
     },
     "steps": [
       {
