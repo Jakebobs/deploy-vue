@@ -1,8 +1,4 @@
-# Welcome to step 1!
-
-We have taken the precaution of setting up a github repository for you, as well as providing the killercoda service with an access token to push to that directory. Which will allow you to only have to learn how to configure Vue for use with Github Pages.
-
-# How do we get started?
+# How do we get started with Vue?
 Great question! Run the following command in the terminal to start the creation of your Vue webpage.
 ` npm create vue@latest `
 
@@ -19,4 +15,10 @@ We want you to name your webapp "porkchop.io" , just to match our existing repo.
     - EsLint : No
     - Vue Devtools: No
 
-You've now created the boilerplate for our page. Let's move on to the next step!
+You've now created the boilerplate for our page. To make sure our git is up and running properly, upload the vue page to the repo by using:
+
+1. ` git add . `
+2. ` git commit -m message `
+3. ` git push --set-upstream origin master `
+
+Authenticate with your username and then use the PAT you created in the previous step as the password.

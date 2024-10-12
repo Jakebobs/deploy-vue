@@ -13,6 +13,14 @@
       {
         "title": "Step 2: Creating a Vue Project",
         "text": "step2/text.md"
+      },
+      {
+        "title": "Step 3: Deploying to Github Pages",
+        "text": "step3/text.md"
+      },
+      {
+        "title": "Step 4: Custom Domain",
+        "text": "step4/text.md"
       }
     ],
     "finish": {
