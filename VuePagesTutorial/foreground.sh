@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git clone https://github.com/miljon3/porkchop.io.git
+
 git config user.email "Tutorial@example.com"
 git config user.name "Tutorial Taker"
 
