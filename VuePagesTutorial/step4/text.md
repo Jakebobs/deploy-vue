@@ -8,7 +8,7 @@ The fix is straightforward. We need to open the editor once again. Navigate to y
 
 - At the top: `import path from 'path';`
 - Inside defineConfig: `base: '/<reponame.io>/',`
- - Replacing `'@': fileURLToPath(new URL('./src', import.meta.url))`  with : `'@': path.resolve(__dirname, 'src'),`
+ - Replacing `'@': fileURLToPath(new URL('./src', import.meta.url))`  with :`'@':path.resolve(__dirname, 'src'),`
 
 Lets move on now that this has been fixed!
 
