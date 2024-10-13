@@ -20,6 +20,8 @@ permissions:
   contents: write
 ```
 
+
+
 ```
 jobs:
   deploy:
@@ -55,6 +57,7 @@ jobs:
           publish_branch: gh-pages
 ```
 
+Here is the entire code. 
 
 ```
 name: Deploy to GitHub Pages
