@@ -1,5 +1,5 @@
 # Adding a new view
-Now, after we've configured the router and app to dynamically scan for views. Adding a new view to our page is as simple as creating the .vue page. To do this we will follow the following steps.
+Now, after we've configured the router and app to dynamically scan for views, adding a new view to our page is as simple as creating the .vue page. To do this we will follow the following steps.
 
 `cd src`
 
