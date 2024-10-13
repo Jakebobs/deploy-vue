@@ -28,9 +28,12 @@
       },
       {
         "title": "Step 6: Hash Routing",
-        "text": "finish.md"
+        "text": "step6/intro.md"
+      },
+      {
+        "title": "Step 7: Custom Domain",
+        "text": "step7/intro.md"
       }
-
     ],
     "finish": {
       "text": "finish.md"
