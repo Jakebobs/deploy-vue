@@ -10,5 +10,22 @@ At the top: `import path from 'path';`
 Inside defineConfig: `base: '/<reponame.io>/',`
 Replacing the existing line starting with @ : `'@': path.resolve(__dirname, 'src'),`
 
-# What do these changes do? 
-These changes tells the page where it is.
+# Full code for `vite.config.js` (Change the reponame to your own)
+```
+import path from 'path';
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [
+    vue(),
+  ],
+  base: '/<reponame.io>/',
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    }
+  }
+})
+```
