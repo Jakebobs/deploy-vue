@@ -16,6 +16,8 @@ change the `history` variable to `history: createWebHashHistory(import.meta.env.
 # Adding dynamic routerlink creation to the vue page.
 One thing that might still hinder your focus on the front-end of the page is that Vue is not set up from the start to dynamically add your views to the navigation bar or router. So we are going to add this so that all you need to do is add new `.vue` files to expand your web page.
 
+# What is dynamic routing?
+
 # Changes to be made in `src/router/index.js`
 ```
 import { createRouter, createWebHashHistory } from 'vue-router';

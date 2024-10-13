@@ -1,5 +1,5 @@
 {
-    "title": "Vue on Github Pages",
+    "title": "Vue on GitHub Pages",
     "details": {
     "intro": {
       "text": "intro.md",
@@ -15,11 +15,11 @@
         "text": "step2/text.md"
       },
       {
-        "title": "Step 3: Deploying to Github Pages",
+        "title": "Step 3: Deploying to GitHub Pages",
         "text": "step3/text.md"
       },
       {
-        "title": "Step 4: Follow the yellow brick road",
+        "title": "Step 4: Follow the Yellow Brick Road",
         "text": "step4/text.md"
       },
       {
@@ -27,11 +27,11 @@
         "text": "step5/text.md"
       },
       {
-        "title": "Step 6: Hash Routing",
+        "title": "Step 6: Hash Routing and Dynamic Routing",
         "text": "step6/text.md"
       },
       {
-        "title": "Step 7: Dynamic Routing",
+        "title": "Step 7: Adding a New View",
         "text": "step7/text.md"
       }
     ],

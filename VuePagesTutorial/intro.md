@@ -14,6 +14,8 @@ If you want to have your own webpage as part of a resume or to allow others to m
 -
 
 ### Please wait for the installations to finish on the right side of the page
+
+
 <!--# Once ` ubuntu $ ` is displayed, run these commands to verify that the installation is correct:
 
 ` node -v `

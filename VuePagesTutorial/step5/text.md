@@ -1,4 +1,4 @@
-# Deploying via Github actions
+# Deploying via GitHub Actions
 Create a new folder named `.github`, enter it and create a new folder named `workflows`
 
 ` mkdir .github `
