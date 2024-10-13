@@ -1,1 +1,1 @@
-# You have now completed the tutorial on setting up a GitHub pages app using Vue.
+# You have now completed the tutorial on setting up a GitHub Pages app using Vue.

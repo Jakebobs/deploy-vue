@@ -1,14 +1,16 @@
 # Open your site, and see that it is blank. Why?
 
-Opening the web developer console will tell us why this is the case. You will find an error message saying `Loading failed for the module with source "https://<username>.github.io/assets/index-xxxxxx.js`. This is because we haven't actually told our website where to find it's own files. **Expand on this for more depth?**
+Opening a web developer console will tell us why this is the case. You would find an error message saying `Loading failed for the module with source "https://<username>.github.io/assets/index-xxxxxx.js`. This is because we haven't actually told our website where to find its own files. **Expand on this for more depth, what is currently wrong?**
 
-# How do fix this?
+# How do we fix this?
 
-The fix is pretty simple. We need to open the editor once again. Navigate to your `vite.config.js` file and add these three things: 
+The fix is straightforward. We need to open the editor once again. Navigate to your `vite.config.js` file and add these three things: 
 
-At the top: `import path from 'path';`
-Inside defineConfig: `base: '/<reponame.io>/',`
-Replacing the existing line starting with @ : `'@': path.resolve(__dirname, 'src'),`
+- At the top: `import path from 'path';`
+- Inside defineConfig: `base: '/<reponame.io>/',`
+ - Replacing `'@': fileURLToPath(new URL('./src', import.meta.url))`  with : `'@': path.resolve(__dirname, 'src'),`
+
+Lets move on now that this has been fixed!
 
 # Full code for `vite.config.js` (Change the reponame to your own)
 ```

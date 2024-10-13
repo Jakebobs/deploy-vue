@@ -23,6 +23,8 @@ To enter your repo, and then run:
 
 `npm install`
 
+To install the necessary packages.
+
 You've now created the boilerplate for our page. To make sure our git is up and running properly, upload the vue page to the repo by using:
 
 1. ` git add . `

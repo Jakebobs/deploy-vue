@@ -7,9 +7,9 @@ change the `history` variable to `history: createWebHashHistory(import.meta.env.
 # What is hash routing?
 
 # Push changes to main and let the Github Action do the publishing for you.
-` git add --all `
-` git commit -m hash routing added!`
-` git push`
+1. ` git add --all `
+2. ` git commit -m hash routing added!`
+3. ` git push`
 
 # Visit (länk)/actions to see your deployment take place live.
 
