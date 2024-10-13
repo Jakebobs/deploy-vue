@@ -8,6 +8,6 @@ First. Run `npm install gh-pages`
 Under "Scripts" add a `"deploy": "gh-pages -d dist"`. Make sure to add a comma to the previous declaration too. This will publish our page when we run the `npm run deploy` command. 
 
 # Run the `npm run build` followed by the `npm run deploy` command.
-Go to `https://<username>.github.com/<reponame>.io/` to view your page now.
+Go to `https://<username>.github.com/<reponame>.io/` to view your page now. It's going to take a minute or two for the "pages build and deployment" action to complete running.
 
 Add info about the pages publishing action (GitHub built in)
