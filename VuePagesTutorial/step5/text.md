@@ -13,7 +13,55 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [master, main] 
+    branches: [master] 
+  workflow_dispatch: 
+
+permissions:
+  contents: write
+```
+
+```
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v4
+```
+
+```
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+```
+
+```
+      - name: Install dependencies
+        run: npm install
+```
+
+```
+      - name: Build the project
+        run: npm run build
+```
+
+```
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+```
+
+
+```
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [master] 
   workflow_dispatch: 
 
 permissions:
