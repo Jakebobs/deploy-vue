@@ -1,6 +1,6 @@
 # Creating the GitHub Pages site
 
-There are two ways of doing this, one is to use the web interface of GitHub and enable it through the repo settings. We are going to do it the other way, by installing the ghpages npm package and running it's publish command.
+There are two ways of doing this, one is to use the web interface of GitHub and enable it through the repo settings. We are going to do it the other way, by installing the ghpages npm package and running its publish command. **Why are we doing it this way?**
 
 First. Run `npm install gh-pages`
 

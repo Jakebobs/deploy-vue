@@ -18,6 +18,9 @@ Answer the questions in this manner:
 Then run:
 
 `cd <reponame>.io`
+
+To enter your repo, and then run:
+
 `npm install`
 
 You've now created the boilerplate for our page. To make sure our git is up and running properly, upload the vue page to the repo by using:
@@ -26,7 +29,7 @@ You've now created the boilerplate for our page. To make sure our git is up and 
 2. ` git commit -m message `
 3. ` git push --set-upstream origin master `
 
-Authenticate with your username and then use the PAT you created in the previous step as the password.
+Authenticate with your username and then use the PAT (Personal access token) you created in the previous step as the password.
 
 # Optional step
 Verify by visiting `https://github.com/<username>/<reponame>.io`
