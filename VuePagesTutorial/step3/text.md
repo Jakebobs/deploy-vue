@@ -11,3 +11,15 @@ Under "Scripts" add a `"deploy": "gh-pages -d dist"`. Make sure to add a comma t
 Go to `https://<username>.github.com/<reponame>.io/` to view your page now. It's going to take a minute or two for the "pages build and deployment" action to complete running.
 
 Add info about the pages publishing action (GitHub built in)
+
+# Full `package.json` scripts code
+```
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+}
+```
