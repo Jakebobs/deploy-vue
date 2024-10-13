@@ -6,13 +6,6 @@ change the `history` variable to `history: createWebHashHistory(import.meta.env.
 
 # What is hash routing?
 
-# Push changes to main and let the Github Action do the publishing for you.
-1. ` git add --all `
-2. ` git commit -m hash routing added!`
-3. ` git push`
-
-# Visit (länk)/actions to see your deployment take place live.
-
 # Adding dynamic routerlink creation to the vue page.
 One thing that might still hinder your focus on the front-end of the page is that Vue is not set up from the start to dynamically add your views to the navigation bar or router. So we are going to add this so that all you need to do is add new `.vue` files to expand your web page.
 
@@ -82,3 +75,8 @@ export default {
   </div>
 </template>
 ```
+
+# Push changes to main and let the Github Action do the publishing for you.
+1. ` git add --all `
+2. ` git commit -m hash routing added!`
+3. ` git push`
