@@ -1,6 +1,17 @@
 # Adding a new view
 Now, after we've configured the router and app to dynamically scan for views, adding a new view to our page is as simple as creating the .vue page. To do this we will follow the following steps.
 
+If you are still in the `.github/workflows` folder. Navigate back using these commands:
+
+
+`cd ..`
+
+
+`cd ..`
+
+
+Then navigate to the views folder using.
+
 `cd src`
 
 
