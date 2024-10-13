@@ -1,65 +1,64 @@
-# Adding dynamic routerlink creation to the vue page.
-One thing that might still hinder your focus on the front-end of the page is that Vue is not set up from the start to dynamically add your views to the navigation bar or router. So we are going to add this so that all you need to do is add new `.vue` files to expand your web page.
+# Adding a new view
+Now, after we've configured the router and app to dynamically scan for views. Adding a new view to our page is as simple as creating the .vue page. To do this we will follow the following steps.
 
-# Changes to be made in `src/router/index.js`
-```import { createRouter, createWebHashHistory } from 'vue-router';
+`cd src`
 
-// Automatically import all views from the "views" directory
-const viewModules = import.meta.glob('../views/*.vue');
 
-export const routes = Object.keys(viewModules).map((viewPath) => {
-  const name = viewPath.split('/').pop().replace('.vue', '');
-  const path = name === 'HomeView' ? '/' : `/${name.replace('View', '').toLowerCase()}`;
+`cd views`
 
-  return {
-    path: path,
-    name: name.toLowerCase(),
-    component: viewModules[viewPath], // Lazy-loaded components
-  };
-});
 
-const router = createRouter({
-  history: createWebHashHistory(import.meta.env.BASE_URL),
-  routes,
-});
+`touch testview.vue`
 
-export default router;
+# Our genorously provided template, just add it. Don't think about it.
 ```
+<template>
+  <div class="video-container">
+    <button v-if="!showVideo" @click="showVideo = true" class="show-video-button"> Click this button </button>
+    <iframe
+      v-if="showVideo"
+      width="1280"
+      height="720"
+      :src="videoSrc"
+      title="YouTube video player"
+      frameborder="0"
+      allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+</template>
 
-
-# Changes to be made in `src/app.vue`
-```<script>
-import { RouterLink, RouterView } from 'vue-router';
-import { routes } from './router';
-
+<script>
 export default {
-  name: 'App',
+  name: 'EasterView',
   data() {
     return {
-      routes
+      showVideo: false,
+      videoSrc: '',
     };
   },
-  methods: {
-    formatRouteName(name) {
-      // Capitalize the first letter for display in the navigation bar
-      return name.charAt(0).toUpperCase() + name.slice(1);
-    }
-  }
+  watch: {
+    showVideo(newVal) {
+      if (newVal) {
+        this.videoSrc = 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1';
+      }
+    },
+  },
 };
 </script>
 
-<template>
-  <div>
-    <nav>
-      <RouterLink
-        v-for="route in routes"
-        :key="route.path"
-        :to="route.path"
-      >
-        {{ formatRouteName(route.name) }}
-      </RouterLink>
-    </nav>
-    <RouterView />
-  </div>
-</template>
+<style scoped>
+.video-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.show-video-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+</style>
 ```
