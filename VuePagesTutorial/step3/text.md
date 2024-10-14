@@ -10,7 +10,7 @@ Under "Scripts" add
 `"deploy": "gh-pages -d dist"`.   
 Make sure to add a comma to the previous declaration too. This will publish our page when we run the `npm run deploy` command. 
 
-# Full `package.json` scripts code
+# Full `package.json` scripts code section
 ```
 {
   "scripts": {
