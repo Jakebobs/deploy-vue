@@ -10,6 +10,7 @@ One additonal thing that might still hinder your focus on the front-end of the p
 # What is dynamic routing?
 Dynamic routing is the process of creating routes in our application based on the files or data available at runtime. Instead of manually defining each route, dynamic routing allows us to automatically generate routes by scanning for available components, which in this case are Vue files. This makes it easier to manage and scale the application as new views are added. 
 
+# This flowchart can help explain how we are using it in this case.
 <img src="../assets/viewflowchart.jpg" height="200">
 
 # Practical steps
