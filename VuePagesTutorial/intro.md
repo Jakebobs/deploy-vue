@@ -9,11 +9,14 @@ If you want to have your own webpage as part of a resume or to allow others to m
 
 ## What will I learn?
 
-- 
--
-- Hash and Dynamic routing and 
+1. **Setting up a Vue.js project**: You will  
+2. **Configuring the project for deployment on GitHub Pages**: You will
+3. **Utilizing hash and dynamic routing**: You will
 
 ## What are the prerequisites?
+
+- Basic knowledge of Vue.js and JavaScript
+- A GitHub account
 
 ### Please wait for the installations to finish on the right side of the page before continuing
 

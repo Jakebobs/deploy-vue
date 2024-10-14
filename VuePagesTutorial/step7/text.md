@@ -80,4 +80,4 @@ export default {
 2. ` git commit -m hash routing added!`
 3. ` git push`
 
-After deploying, your newly added view should be up and running on your website (`https://<username>.github.io/<reponame>.io/`). 
+After deploying, your newly added view should be up and running on your website (`https://<username>.github.io/<reponame>.io/`). If you don't see a third view, then wait for the deployment to finish before checking again. 
