@@ -8,8 +8,9 @@ Hash routing is very similar to regular URL routing. But instead of sending a re
 One additonal thing that might still hinder your focus on the front-end of the page is that Vue is not set up from the start to dynamically add your views to the navigation bar or router. So we are going to add this so that all you need to do is add new `.vue` files to expand your web page.
 
 # What is dynamic routing?
-Dynamic routing is the process of creating routes in our application based on the files or data available at runtime. Instead of manually defining each route, dynamic routing allows us to automatically generate routes by scanning for available components, which in this case are Vue files. This makes it easier to manage and scale the application as new views are added.
+Dynamic routing is the process of creating routes in our application based on the files or data available at runtime. Instead of manually defining each route, dynamic routing allows us to automatically generate routes by scanning for available components, which in this case are Vue files. This makes it easier to manage and scale the application as new views are added. 
 
+<img src="../assets/viewflowchart.jpg" height="200">
 
 # Practical steps
 
