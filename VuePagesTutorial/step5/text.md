@@ -1,8 +1,6 @@
 # Deploying via GitHub Actions
 
-Now we want to .....
-
-First, create a new folder named `.github`, enter it and create a new folder named `workflows`. Then enter it and create the `pagedeploy.yml` file. 
+Now that the assets for the website are accessible, we want to be able to deploy it, using GitHub Actions. First, create a new folder named `.github`, enter it and create a new folder named `workflows`. Then enter it and create the `pagedeploy.yml` file. 
 
 The steps in the terminal are:
 
@@ -27,6 +25,8 @@ permissions:
   contents: write
 ```
 
+Here we set workflow to trigger whenever there is a push to the master branch. 
+We also allow it to write contents to the repository.
 
 
 ```
@@ -38,6 +38,10 @@ jobs:
         uses: actions/checkout@v4
 ```
 
+Next we start to define the steps that will run as a part of the workflow. 
+The first one, `actions/checkout`, gives the workflow access to our repository.  
+
+
 ```
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -45,15 +49,19 @@ jobs:
           node-version: 20
 ```
 
+The next step is `actions/setup-node` which installs the specified version of Node.js
+
 ```
       - name: Install dependencies
         run: npm install
-```
 
-```
       - name: Build the project
         run: npm run build
 ```
+
+Here we `run npm install` to install the project dependencies from package.json.
+We then `run npm build` to compile the project based on these dependencies.
+
 
 ```
       - name: Deploy to GitHub Pages
@@ -63,8 +71,10 @@ jobs:
           publish_dir: ./dist
           publish_branch: gh-pages
 ```
+Finally we deploy the project to gh-pages branch. 
 
-Here is the entire code. 
+
+Here is the entire code for the .yml file. 
 
 ```
 name: Deploy to GitHub Pages
@@ -104,9 +114,9 @@ jobs:
 ```
 
 # What does this enable?
-You might prefer to have the newest changes published to the page on push to main instead of only using the deploy command. An advantage of this approach is that it will also enable you to add additonal actions to your deployment pipeline instead of having the deployment backdoor through the gh-pages package.
+You might prefer to have the newest changes published to the page on push to master instead of only using the deploy command. An advantage of this approach is that it will also enable you to add additional actions to your deployment pipeline instead of having the deployment backdoor through the gh-pages package.
 
-# Go to the terminal and push your changes
+# Go to the terminal and push your changes before moving on
 1. ` git add --all`
 2. ` git commit -m workflow added`
 3. ` git push `
