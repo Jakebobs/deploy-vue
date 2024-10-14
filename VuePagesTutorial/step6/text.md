@@ -2,9 +2,7 @@
 Now, if we want the user to be able to access more complex content on our website, we need to enable hash routing. 
 
 # What is hash routing?
-
-
-
+Hash routing is very similar to regular URL routing. But instead of sending a request to the server to return for example `bing.io/search` it instead uses your browser to find the corresponding page at `bing.io/#/search`and navigate to it without sending any requests to the server. This is especially useful for making single page applications on GitHub pages, which doesn't allow any server code.
 
 # Adding dynamic routerlink creation to the vue page.
 One additonal thing that might still hinder your focus on the front-end of the page is that Vue is not set up from the start to dynamically add your views to the navigation bar or router. So we are going to add this so that all you need to do is add new `.vue` files to expand your web page.
@@ -17,12 +15,15 @@ Dynamic routing is the process of creating routes in our application based on th
 
 To do this we need to navigate to the `src/router/index.js` file. There we want to do two things:
 
-add `createWebHashHistory` to the import statement that imports from `'vue-router'`
-change the `history` variable to `history: createWebHashHistory(import.meta.env.BASE_URL),`
+1. add `createWebHashHistory` to the import statement that imports from `'vue-router'`
+2. change the `history` variable to `history: createWebHashHistory(import.meta.env.BASE_URL),`
 
 Then after having made these changes in `src/router/index.js`. We want to navigate to `src/app.vue` and make the following changes.
 
-In your `<script>` tag, remove the "setup" string from the opening tag. Then remove the Helloworld import. Add a new import `import { routes } from './router';` then add this function. The function takes the names of our routes and makes their first letter uppercase so they look prettier in the navigation bar. You could skip this if you don't mind the names being lowercase or to implement a better naming logic of your own.
+3. In your `<script>` tag, remove the "setup" string from the opening tag. 
+4. Remove `import Helloworld`. 
+5. Add a new import `import { routes } from './router';` 
+6. Add the below function. It takes the names of our routes and makes their first letter uppercase so they look prettier in the navigation bar. You could skip this step if you don't mind the names being lowercase.
 ```
 export default {
   name: 'App',
@@ -45,7 +46,10 @@ Then you want to go to your `<template>` tag and replace it's current hard coded
 <template>
   <div>
     <nav>
-      <RouterLink v-for="route in routes" :key="route.path" :to="route.path">
+      <RouterLink 
+      v-for="route in routes" 
+      :key="route.path" 
+      :to="route.path">
         {{ formatRouteName(route.name) }}
       </RouterLink>
     </nav>
