@@ -7,7 +7,7 @@ First. Run `npm install gh-pages`
 Then open the editor to the right and find the `package.json` file in the `<reponame>` folder, open it.
 
 Under "Scripts" add  
-`"deploy": "gh-pages -d dist"`. 
+`"deploy": "gh-pages -d dist"`.   
 Make sure to add a comma to the previous declaration too. This will publish our page when we run the `npm run deploy` command. 
 
 # Full `package.json` scripts code

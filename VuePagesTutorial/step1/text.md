@@ -16,6 +16,6 @@ Select:
 
 Select `Paste Personal Access Token` and create a new token with the 'repo', 'read:org' and 'workflow' options selected on https://github.com/settings/tokens . We will be needing the token everytime we are asked for our password, so write it down, copy it to the clipboard, or keep the tab with the token available. 
 
-After succesfully logging in, then run 
-`gh repo create <reponame>.io --public --clone` 
+After succesfully logging in, then run  
+`gh repo create <reponame>.io --public --clone`  
 to create a new public repository on GitHub from scratch. *reponame* can be any name you want, but it needs to remain the same throughout the tutorial. It also has to end in .io for GitHub Pages to work seamlessly, since this is the standard domain name.

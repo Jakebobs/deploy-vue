@@ -9,9 +9,9 @@ If you want to have your own webpage as part of a resume or to allow others to m
 
 ## What will I learn?
 
+- 
 -
--
--
+- Hash and Dynamic routing and 
 
 ## What are the prerequisites?
 
