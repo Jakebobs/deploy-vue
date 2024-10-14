@@ -2,7 +2,7 @@
 Now, if we want the user to be able to access more complex content on our website, we need to enable hash routing. 
 
 # What is hash routing?
-Hash routing is very similar to regular URL routing. But instead of sending a request to the server to return for example `bing.io/search` it instead uses your browser to find the corresponding page at `bing.io/#/search`and navigate to it without sending any requests to the server. This is especially useful for making single page applications on GitHub pages, which doesn't allow any server code.
+Hash routing is very similar to regular URL routing. But instead of sending a request to the server to return for example `bing.io/search` it instead uses your browser to find the corresponding page at `bing.io/#/search`and navigate to it without sending any requests to the server. This is especially useful for making single page applications on GitHub Pages, which doesn't allow any server code.
 
 # Adding dynamic routerlink creation to the vue page.
 One additonal thing that might still hinder your focus on the front-end of the page is that Vue is not set up from the start to dynamically add your views to the navigation bar or router. So we are going to add this so that all you need to do is add new `.vue` files to expand your web page.
@@ -41,7 +41,7 @@ export default {
 };
 ```
 
-Then you want to go to your `<template>` tag and replace it's current hard coded RouterLinks with this function that dynamically creates them.
+Then you want to go to your `<template>` tag and replace its current hard coded RouterLinks with this function that dynamically creates them.
 ```
 <template>
   <div>
