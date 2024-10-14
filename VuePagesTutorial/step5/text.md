@@ -90,7 +90,10 @@ Finally we deploy the project to gh-pages branch. We have chosen to utilise this
 <br>
 
 
-Here is the entire code for the .yml file. 
+<img src="../assets/Actionchart.jpg" height="200">
+
+
+# Here is the entire code for the .yml file. 
 
 ```
 name: Deploy to GitHub Pages
