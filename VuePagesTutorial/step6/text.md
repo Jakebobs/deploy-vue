@@ -5,11 +5,12 @@ Now, if we want the user to be able to access more complex content on our websit
 
 
 
+
 # Adding dynamic routerlink creation to the vue page.
 One additonal thing that might still hinder your focus on the front-end of the page is that Vue is not set up from the start to dynamically add your views to the navigation bar or router. So we are going to add this so that all you need to do is add new `.vue` files to expand your web page.
 
 # What is dynamic routing?
-Dy
+Dynamic routing is the process of creating routes in our application based on the files or data available at runtime. Instead of manually defining each route, dynamic routing allows us to automatically generate routes by scanning for available components, which in this case are Vue files. This makes it easier to manage and scale the application as new views are added.
 
 
 # Practical steps
