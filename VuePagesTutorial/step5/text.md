@@ -71,7 +71,7 @@ We then `run npm build` to compile the project based on these dependencies.
           publish_dir: ./dist
           publish_branch: gh-pages
 ```
-Finally we deploy the project to gh-pages branch. We have chosen to utilise this [GitHub marketplace Action](https://github.com/marketplace/actions/github-pages-action), it essentially checks out the branch, installs dpendencies, builds the package, and publishes it to the gh-pages branch. One could replicate this themselves but that would add a lot of complexity for little to no benefit.
+Finally we deploy the project to gh-pages branch. We have chosen to utilise this [GitHub marketplace Action](https://github.com/marketplace/actions/github-pages-action), it essentially checks out the branch, installs dependencies, builds the package, and publishes it to the gh-pages branch. One could replicate this themselves but that would add a lot of complexity for little to no benefit.
 
 
 Here is the entire code for the .yml file. 
