@@ -45,11 +45,7 @@ Then you want to go to your `<template>` tag and replace it's current hard coded
 <template>
   <div>
     <nav>
-      <RouterLink
-        v-for="route in routes"
-        :key="route.path"
-        :to="route.path"
-      >
+      <RouterLink v-for="route in routes" :key="route.path" :to="route.path">
         {{ formatRouteName(route.name) }}
       </RouterLink>
     </nav>
