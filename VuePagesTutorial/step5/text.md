@@ -26,7 +26,7 @@ permissions:
 ```
 
 Here we set workflow to trigger whenever there is a push to the master branch. 
-We also allow it to write contents to the repository.
+We also allow it to write contents to the repository.  
 
 
 ```
@@ -49,7 +49,7 @@ The first one, `actions/checkout`, gives the workflow access to our repository.
           node-version: 20
 ```
 
-The next step is `actions/setup-node` which installs the specified version of Node.js
+The next step is `actions/setup-node` which installs the specified version of Node.js  
 
 ```
       - name: Install dependencies
@@ -60,7 +60,7 @@ The next step is `actions/setup-node` which installs the specified version of No
 ```
 
 Here we `run npm install` to install the project dependencies from package.json.
-We then `run npm build` to compile the project based on these dependencies.
+We then `run npm build` to compile the project based on these dependencies.  
 
 
 ```
@@ -71,7 +71,7 @@ We then `run npm build` to compile the project based on these dependencies.
           publish_dir: ./dist
           publish_branch: gh-pages
 ```
-Finally we deploy the project to gh-pages branch. We have chosen to utilise this [GitHub marketplace Action](https://github.com/marketplace/actions/github-pages-action), it essentially checks out the branch, installs dependencies, builds the package, and publishes it to the gh-pages branch. One could replicate this themselves but that would add a lot of complexity for little to no benefit.
+Finally we deploy the project to gh-pages branch. We have chosen to utilise this [GitHub marketplace Action](https://github.com/marketplace/actions/github-pages-action), it essentially checks out the branch, installs dependencies, builds the package, and publishes it to the gh-pages branch. One could replicate this themselves but that would add a lot of complexity for little to no benefit.  
 
 
 Here is the entire code for the .yml file. 
