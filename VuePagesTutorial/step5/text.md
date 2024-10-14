@@ -89,7 +89,7 @@ Finally we deploy the project to gh-pages branch. We have chosen to utilise this
 <br>
 <br>
 
-
+# This handy flowchart can help to explain the process at large.
 <img src="../assets/Actionchart.jpg" height="200">
 
 
