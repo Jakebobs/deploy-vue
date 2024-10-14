@@ -4,8 +4,11 @@ There are two ways of doing this, one is to use the web interface of GitHub and 
 
 First. Run `npm install gh-pages`
 
-# Open the editor to the right and find the `package.json` file in the `<reponame>` folder, open it.
-Under "Scripts" add `"deploy": "gh-pages -d dist"`. Make sure to add a comma to the previous declaration too. This will publish our page when we run the `npm run deploy` command. 
+Then open the editor to the right and find the `package.json` file in the `<reponame>` folder, open it.
+
+Under "Scripts" add\ 
+`"deploy": "gh-pages -d dist"`. 
+Make sure to add a comma to the previous declaration too. This will publish our page when we run the `npm run deploy` command. 
 
 # Full `package.json` scripts code
 ```
@@ -23,6 +26,6 @@ Under "Scripts" add `"deploy": "gh-pages -d dist"`. Make sure to add a comma to 
  1. `npm run build`
  2. `npm run deploy`
 
-Go to `https://<username>.github.com/<reponame>.io/` to view your page now. It's going to take a minute or two for the "pages build and deployment" action to complete running.
+Go to `https://<username>.github.io/<reponame>.io/` to view your page now. It's going to take a minute or two for the "pages build and deployment" action to finish running.
 
 Add info about the pages publishing action (GitHub built in)

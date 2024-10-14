@@ -1,7 +1,7 @@
 # Adding a new view
 Now, after we've configured the router and app to dynamically scan for views, adding a new view to our page is as simple as creating the .vue page. To do this we will follow the following steps.
 
-If you are still in the `.github/workflows` folder. Navigate back using these commands:
+If you are still in the `.github/workflows` folder. Navigate back using these commands in the terminal:
 
 
 `cd ..`
@@ -20,7 +20,9 @@ Then navigate to the views folder using.
 
 `touch testview.vue`
 
-# Our genorously provided template, just add it. Don't think about it.
+You could do this in the editor by creating the `testview.vue` file in the `views` folder. As we have already implemented the dynamic routing all we have to do now is add some content to our view. We recommend the following code:
+
+# Our generously provided template, just add it. Don't think about it.
 ```
 <template>
   <div class="video-container">
@@ -73,7 +75,7 @@ export default {
 }
 </style>
 ```
-# Push changes to main and let the Github Action do the publishing for you.
+# Now, push changes to main and let the Github Action do the publishing for you.
 1. ` git add --all `
 2. ` git commit -m hash routing added!`
 3. ` git push`

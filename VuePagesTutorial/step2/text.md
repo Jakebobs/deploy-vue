@@ -1,5 +1,5 @@
 # How do we get started with Vue?
-Great question! Run the following command in the terminal to start the creation of your Vue webpage.
+Great question! Run the following command in the terminal to start the creation of your Vue webpage.\
 ` npm create vue@3.11.0 `
 
 You will now see many questions arrive in the terminal.
