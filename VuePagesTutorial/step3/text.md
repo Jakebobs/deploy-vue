@@ -26,7 +26,7 @@ Make sure to add a comma to the previous declaration too. This will publish our 
  1. `npm run build`
  2. `npm run deploy`
 
-# GitHub pages publishing action
+# GitHub Pages publishing action
 
 Before moving on, 
 
