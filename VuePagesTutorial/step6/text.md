@@ -20,9 +20,45 @@ To do this we need to navigate to the `src/router/index.js` file. There we want 
 add `createWebHashHistory` to the import statement that imports from `'vue-router'`
 change the `history` variable to `history: createWebHashHistory(import.meta.env.BASE_URL),`
 
-Next up, dynamic routing changes here....
+Then after having made these changes in `src/router/index.js`. We want to navigate to `src/app.vue` and make the following changes.
 
-# Changes to be made in `src/router/index.js`
+In your `<script>` tag, remove the "setup" string from the opening tag. Then remove the Helloworld import. Add a new import `import { routes } from './router';` then add this function. The function takes the names of our routes and makes their first letter uppercase so they look prettier in the navigation bar. You could skip this if you don't mind the names being lowercase or to implement a better naming logic of your own.
+```
+export default {
+  name: 'App',
+  data() {
+    return {
+      routes
+    };
+  },
+  methods: {
+    formatRouteName(name) {
+      // Capitalize the first letter for display in the navigation bar
+      return name.charAt(0).toUpperCase() + name.slice(1);
+    }
+  }
+};
+```
+
+Then you want to go to your `<template>` tag and replace it's current hard coded RouterLinks with this function that dynamically creates them.
+```
+<template>
+  <div>
+    <nav>
+      <RouterLink
+        v-for="route in routes"
+        :key="route.path"
+        :to="route.path"
+      >
+        {{ formatRouteName(route.name) }}
+      </RouterLink>
+    </nav>
+    <RouterView />
+  </div>
+</template>
+```
+
+# Full code for `src/router/index.js`
 ```
 import { createRouter, createWebHashHistory } from 'vue-router';
 
@@ -49,7 +85,7 @@ export default router;
 ```
 
 
-# Changes to be made in `src/app.vue`
+# Changes to be made in `src/app.vue`, you only need to change the `<script>` and `<template>` tags
 ```
 <script>
 import { RouterLink, RouterView } from 'vue-router';

@@ -26,7 +26,7 @@ Make sure to add a comma to the previous declaration too. This will publish our 
  1. `npm run build`
  2. `npm run deploy`
 
-Go to `https://<username>.github.io/<reponame>.io/` to view your page now. It's going to take a minute or two for the "pages build and deployment" action to finish running.
+Go to `https://<username>.github.io/<reponame>.io/` to view your page now.
 
 # GitHub pages publishing action
 
