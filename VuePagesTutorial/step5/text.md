@@ -90,7 +90,7 @@ Finally we deploy the project to gh-pages branch. We have chosen to utilise this
 <br>
 
 # This handy flowchart can help to explain the process at large.
-<img src="../assets/Actionchart.jpg" height="200">
+<img src="../assets/Actionchart.jpg" height="500">
 
 
 # Here is the entire code for the .yml file. 
