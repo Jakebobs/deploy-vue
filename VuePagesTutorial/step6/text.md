@@ -3,18 +3,23 @@ Now, if we want the user to be able to access more complex content on our websit
 
 # What is hash routing?
 
+
+
 # Adding dynamic routerlink creation to the vue page.
 One additonal thing that might still hinder your focus on the front-end of the page is that Vue is not set up from the start to dynamically add your views to the navigation bar or router. So we are going to add this so that all you need to do is add new `.vue` files to expand your web page.
 
 # What is dynamic routing?
+Dy
 
 
-
+# Practical steps
 
 To do this we need to navigate to the `src/router/index.js` file. There we want to do two things:
 
 add `createWebHashHistory` to the import statement that imports from `'vue-router'`
 change the `history` variable to `history: createWebHashHistory(import.meta.env.BASE_URL),`
+
+Next up, dynamic routing changes here....
 
 # Changes to be made in `src/router/index.js`
 ```

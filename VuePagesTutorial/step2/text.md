@@ -34,4 +34,4 @@ You've now created the boilerplate for our page. To make sure our git is up and 
 Authenticate with your username and then use the PAT (Personal access token) you created in the previous step as the password.
 
 # Optional step
-Verify the creation of the repo by visiting `https://github.com/<username>/<reponame>.io`
+Verify the creation of the repo before moving on by visiting `https://github.com/<username>/<reponame>.io`
