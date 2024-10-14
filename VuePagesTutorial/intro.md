@@ -5,7 +5,7 @@
 Welcome to our step by step guide on setting up a Vue.js webpage on GitHub pages.
 
 ## Why should I learn this?
-Learning to incorporate an automated CI/CD pipeline into something as simple as a web page is a great start for developing an understanding of DevOps. By using client-side routing, you get to focus solely on delivering a front-end experience without needing to manage backend infrastructure than can require more prerequisite knowledge. We think this serves as a good foundation for future, more complex DevOps workflows.
+Learning to incorporate an automated CI/CD pipeline into something as simple as a web page is a great start for developing an understanding of DevOps. By using client-side routing, you get to focus solely on delivering a front-end experience without needing to manage complex backend infrastructure. We think this serves as a good foundation for future, more complex DevOps workflows.
 
 ## What will I learn?
 

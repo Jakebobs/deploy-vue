@@ -28,4 +28,6 @@ Make sure to add a comma to the previous declaration too. This will publish our 
 
 Go to `https://<username>.github.io/<reponame>.io/` to view your page now. It's going to take a minute or two for the "pages build and deployment" action to finish running.
 
+# GitHub pages publishing action
+
 Add info about the pages publishing action (GitHub built in)

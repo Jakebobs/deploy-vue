@@ -77,7 +77,7 @@ export default {
 ```
 # Now, push changes to main and let the Github Action do the publishing for you.
 1. ` git add --all `
-2. ` git commit -m hash routing added!`
+2. ` git commit -m easteregg!`
 3. ` git push`
 
 After deploying, your newly added view should be up and running on your website (`https://<username>.github.io/<reponame>.io/`). If you don't see a third view, then wait for the deployment to finish before checking again. 

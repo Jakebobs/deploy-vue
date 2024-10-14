@@ -118,5 +118,5 @@ You might prefer to have the newest changes published to the page on push to mas
 
 # Go to the terminal and push your changes before moving on
 1. ` git add --all`
-2. ` git commit -m workflow added`
+2. ` git commit -m workflow`
 3. ` git push `
