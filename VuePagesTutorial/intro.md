@@ -2,16 +2,16 @@
 
 ### Authored by: [Carl Lavö](https://github.com/miljon3) & [Jakob Ström](https://github.com/Jakebobs)
 
-Welcome to our step by step guide.
+Welcome to our step by step guide on setting up a Vue.js webpage on GitHub pages.
 
-## Why should I learn this? Mer *why it is important for devops?*
-If you want to have your own webpage as part of a resume or to allow others to more easily get an overview of your work. We think that using Vue is one of the simplest tools for perfoming this task in combination with github pages, since it can easily be set up to employ client-side routing. So you won't have to worry about a backend set up and can instead focus on the front end which your visitors will actually see.
+## Why should I learn this?
+Learning to incorporate an automated CI/CD pipeline into something as simple as a web page is a great start for developing an understanding of DevOps. By using client-side routing, you get to focus solely on delivering a front-end experience without needing to manage backend infrastructure than can require more prerequisite knowledge. We think this serves as a good foundation for future, more complex DevOps workflows.
 
 ## What will I learn?
 
-1. **Setting up a Vue.js project**: You will  
-2. **Configuring the project for deployment on GitHub Pages**: You will
-3. **Utilizing hash and dynamic routing**: You will
+1. **Setting up a Vue.js project**: You will learn how to initialize a new Vue.js project using the Vue CLI.
+2. **Configuring the project for deployment on GitHub Pages**: You will configure your GitHub repository to automatically deploy your site to GitHub Pages using GitHub Actions.
+3. **Utilizing hash and dynamic routing**: You will learn how to implement client-side hash routing, including making changes to ensure that the router automatically updates whenever new content is added.
 
 ## What are the prerequisites?
 
@@ -19,12 +19,3 @@ If you want to have your own webpage as part of a resume or to allow others to m
 - A GitHub account
 
 ### Please wait for the installations to finish on the right side of the page before continuing
-
-
-<!--# Once ` ubuntu $ ` is displayed, run these commands to verify that the installation is correct:
-
-` node -v `
-Version should be v18.20.4
-
-` npm -v `
-Version should be 10.7.0
